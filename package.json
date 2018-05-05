@@ -1,0 +1,30 @@
+{
+  "name": "mgbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoBey/mgbs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoBey/mgbs/issues"
+  },
+  "homepage": "https://github.com/NoBey/mgbs#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-fullpage": "^0.1.18"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.7.1"
+  }
+}
