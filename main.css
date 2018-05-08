@@ -1,12 +1,12 @@
 @keyframes paint1
 {
-from { transform: rotate(0deg);}
-to  { transform: rotate(360deg);}
+from { transform: rotate(360deg);}
+to  { transform: rotate(0deg);}
 }
 @keyframes paint2
 {
-from { transform: rotate(0deg);}
-to  { transform: rotate(360deg);}
+from { transform: rotate(360deg);}
+to  { transform: rotate(0deg);}
 }
 
 @keyframes lr
@@ -19,6 +19,12 @@ to  { transform: rotate(360deg);}
 from { transform: rotate(360deg);}
 to  { transform: rotate(0deg);}
 }
+@keyframes bt
+{
+0% { transform: scale(0.8, 0.8);}
+50%  { transform: scale(1.2, 1.2);}
+100%  { transform: scale(0.8, 0.8);}
+}
 
 body{
   margin: 0px !important;
@@ -27,21 +33,62 @@ body{
   width: 100%;
 }
 
+.zt1{
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 400;
+
+}
+.zt2{
+  font-size: 3vw;
+  font-weight: 400;
+  color: #fff
+
+}
+.bt1{
+  animation:bt 1s infinite linear;
+
+}
+
 .bg{
-  background: url(./img/p2/bg.jpg);
+  background: url(./img/p2/stars.png), url(./img/p2/bg.jpg);
   width: 100vw;
   height: 100vh;
-  background-size: 100% 100%;
-  padding-top: 10vh;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.bg2{
+  background:url(./img/p3/bg3.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: auto 100%;
+  background-position: center;
+}
+.bg3{
+  background:url(./img/p4/snowflake.png), url(./img/p4/bg.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: auto 100%;
+  background-position: 45%;
+}
+.bg4{
+  background:url(./img/p5/top.jpg), url(./img/p5/bg.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: auto 100%;
+  background-position: center;
 }
 
 .clockwrap{
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   align-items: center;
   display: flex;
   justify-content: center;
   position: relative;
+  top: 10vh;
+  transform: scale(0.8,0.8)
 }
 .clock{
   background: url(./img/p2/clock/3.png);
@@ -205,7 +252,7 @@ margin-top: 12vw;
   background-repeat: no-repeat;
 background-position: 50% 20%;
 background-size: 4% 40%;
-animation:paint1 10s infinite linear;
+animation:paint1 5s infinite linear;
 position: absolute;
 }
 .paint2{
@@ -215,7 +262,6 @@ position: absolute;
   background-repeat: no-repeat;
 background-position: 50% 20%;
 background-size: 4% 40%;
-animation:paint1 4s infinite linear;
+animation:paint1 2s infinite linear;
 position: absolute;
-
 }
