@@ -22,8 +22,11 @@ to  { transform: rotate(0deg);}
 
 @keyframes bgzhuan
 {
-from { transform: rotate(360deg) scale(2, 2);}
-to  { transform: rotate(0deg) scale(2, 2);}
+0% { background-position: left;}
+25%  { background-position: top;}
+50%  { background-position: right;}
+75%  { background-position: bottom;}
+100%  { background-position: left;}
 }
 @keyframes bt
 {
@@ -60,10 +63,10 @@ body{
   background: url(./img/p2/stars.png), url(./img/p2/bg.jpg);
   width: 100vw;
   height: 100vh;
-  background-size: auto 100%;
+  background-size: auto 150%;
   background-position: center;
   position: absolute;
-  animation:bgzhuan 1s infinite linear;
+  animation:bgzhuan 5s infinite linear;
 
 }
 
