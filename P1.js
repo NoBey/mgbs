@@ -5,7 +5,9 @@ export default  class P1 extends React.Component {
   render() {
 
     return (
+      <div style={{width: '100vw', height: '100vh'}}>
       <div className={'bg'}>
+      </div>
        <div className={'clockwrap'}>
         <div className={'clock'} >
          <div className={'paint1'} />
@@ -31,6 +33,7 @@ export default  class P1 extends React.Component {
        <p className={'zt2'} style={{zIndex:999, position: 'absolute', top: '75vh', left: '19vw'}}><a className={'zt1'}>时间的运动</a> 即将越过 <a className={'zt1'}>特殊的纬度</a></p>
 
        <a className={'zt1 bt1'} style={{zIndex:999, position: 'absolute', top: '85vh', width: '100vw', textAlign: 'center'}}> 开始逆转</a>
+
 
       </div>
     );

@@ -23803,7 +23803,8 @@ var P1 = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'bg' },
+        { style: { width: '100vw', height: '100vh' } },
+        _react2.default.createElement('div', { className: 'bg' }),
         _react2.default.createElement(
           'div',
           { className: 'clockwrap' },
@@ -24071,11 +24072,9 @@ var Example = function (_React$Component) {
         sectionClassName: 'section',
         anchors: ['section1', 'section2', 'section3', 'section4'],
         scrollBar: false,
-        navigation: true,
+        navigation: false,
         verticalAlign: false,
-        // sectionPaddingTop:    '50px',
-        // sectionPaddingBottom: '50px',
-        arrowNavigation: true
+        arrowNavigation: false
       };
 
       return _react2.default.createElement(
@@ -24119,7 +24118,7 @@ _reactDom2.default.render(_react2.default.createElement(Example, null), app);
 require('./main.css');
 
 require('./main.js');
-},{"./main.css":4,"./main.js":2}],95:[function(require,module,exports) {
+},{"./main.css":4,"./main.js":2}],96:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -24288,5 +24287,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[95,3])
+},{}]},{},[96,3])
 //# sourceMappingURL=/mgbs.028c9635.map

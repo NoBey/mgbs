@@ -23736,7 +23736,8 @@ var P1 = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'bg' },
+        { style: { width: '100vw', height: '100vh' } },
+        _react2.default.createElement('div', { className: 'bg' }),
         _react2.default.createElement(
           'div',
           { className: 'clockwrap' },
@@ -24004,11 +24005,9 @@ var Example = function (_React$Component) {
         sectionClassName: 'section',
         anchors: ['section1', 'section2', 'section3', 'section4'],
         scrollBar: false,
-        navigation: true,
+        navigation: false,
         verticalAlign: false,
-        // sectionPaddingTop:    '50px',
-        // sectionPaddingBottom: '50px',
-        arrowNavigation: true
+        arrowNavigation: false
       };
 
       return _react2.default.createElement(

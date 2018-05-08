@@ -14,11 +14,9 @@ class Example extends React.Component {
       sectionClassName:     'section',
       anchors:              ['section1', 'section2', 'section3', 'section4'],
       scrollBar:            false,
-      navigation:           true,
+      navigation:           false,
       verticalAlign:        false,
-      // sectionPaddingTop:    '50px',
-      // sectionPaddingBottom: '50px',
-      arrowNavigation:      true
+      arrowNavigation:      false
     };
 
     return (
