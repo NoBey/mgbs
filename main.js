@@ -11,7 +11,11 @@ const app = document.querySelector('#app');
 class Example extends React.Component {
   componentDidMount(){
     $(function(){
-    $('#fullpage').fullpage();
+    var el = $('#fullpage').fullpage({
+      loopHorizontal: false,
+      slidesNavigation: false,
+      controlArrows: false
+    });
 });
   }
   render() {

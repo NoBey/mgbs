@@ -71,25 +71,30 @@ body{
 }
 
 .bg2{
-  background:url(./img/p3/bg3.jpg);
+  background:url(./img/3.png);
   width: 100vw;
   height: 100vh;
   background-size: auto 100%;
   background-position: center;
+  position: relative;
 }
 .bg3{
-  background:url(./img/p4/snowflake.png), url(./img/p4/bg.jpg);
+  background:url(./img/p4/snowflake.png), url(./img/4.png);
   width: 100vw;
   height: 100vh;
   background-size: auto 100%;
   background-position: 45%;
+  position: relative;
+
 }
 .bg4{
-  background:url(./img/p5/top.jpg), url(./img/p5/bg.jpg);
+  background:url(./img/5.png);
   width: 100vw;
   height: 100vh;
   background-size: auto 100%;
   background-position: center;
+  position: relative;
+  
 }
 
 .clockwrap{
