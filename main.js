@@ -9,12 +9,28 @@ import P4 from './P4.js'
 const app = document.querySelector('#app');
 
 class Example extends React.Component {
+  constructor(props) {
+     super(props);
+     this.state = {
+         step: 1,
+         dot: 0
+     };
+
+ }
   componentDidMount(){
+    var that = this
     $(function(){
     var el = $('#fullpage').fullpage({
       loopHorizontal: false,
       slidesNavigation: false,
-      controlArrows: false
+      controlArrows: false,
+      onLeave: (one, two, type)=>{
+        if(type == 'up' && two == 1)return false
+        that.setState({step: 2})
+      },
+      onSlideLeave: (...a) => {
+        that.setState({dot: a[4]})
+      }
     });
 });
   }
@@ -33,6 +49,14 @@ class Example extends React.Component {
           </div>
 
       </div>
+      {
+        (this.state.step === 2) ? <div style={{display:'flex', justifyContent: 'center', position: 'absolute', top: '90vh', width: '100vw'}}>
+
+           {
+             [1,2,3].map(a => <div key={'k'+a} className={this.state.dot === (a-1) ? 'dot2' : 'dot1'}/>)
+           }
+          </div> : null
+      }
 
       </div>
     );
