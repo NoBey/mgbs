@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/NoBey/mgbs#readme",
   "dependencies": {
-    "fullpage.js": "^2.9.7",
+    "fullpage.js": "^4.0.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-fullpage": "^0.1.18"
